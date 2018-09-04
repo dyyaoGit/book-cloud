@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="container index">
+  <image src='/static/img/loading.svg' class="loading" wx:if="{{isLoading}}"></image>
+  <view wx:else>
+    <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{swiperData}}" wx:key="{{index}}" >
+      <swiper-item bindtap="jumpBook" data-id="{{item.book._id}}">
+        <image src="{{item.img}}" class="slide-image" />
+      </swiper-item>
+    </block>
+    </swiper>
+
+    <view class="main-content">
+      <view class="content-item" wx:for="{{mainContent}}" wx:key="index">
+        <view class="title">
+          {{item.title}}
+        </view>
+        <view class="content" wx:for="{{item.books}}" wx:key="index">
+          <view class="box-l">
+            <image src="{{item.img}}" class="img"></image>
+          </view>
+          <view class="box-r">
+            <view>
+              <view class="book-title">{{item.title}}</view>
+              <view class="book-desc">{{item.desc}}</view>
+            </view>
+            
+            <view class="author">
+              <text class="author-l">{{item.author}}</text>
+              <view class="aurhot-r">
+                <text class="update-time">两天前</text>
+                <text class="category">后端开发</text>
+                <text class="many">{{item.looknums}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+

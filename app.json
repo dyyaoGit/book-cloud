@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/details/details",
+    "pages/catalog/catalog",
+    "pages/book/book"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "云书",
+    "navigationBarTextStyle": "black"
+  }
+}

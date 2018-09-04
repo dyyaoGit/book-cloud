@@ -1,0 +1,62 @@
+@import '/towxml/style/main.wxss';
+@import '/towxml/style/theme/light.wxss';
+@import '/towxml/style/theme/dark.wxss';
+@import '/static/iconfont/iconfont.wxss';
+
+.book .menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #f1f1f1;
+  line-height: 100rpx;
+  height: 100rpx;
+  background: #fff;
+}
+
+.menu .iconfont {
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+}
+
+.menu .iconfont:active {
+  background: #f1f1f1;
+}
+
+.catalog-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  padding-bottom: 100rpx;
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  z-index: 996;
+  width: 680rpx;
+}
+
+.catalog-menu .catalog-item {
+  font-size: 14px;
+  color: #333;
+  line-height: 70rpx;
+  height: 70rpx;
+  padding-left: 20rpx;
+}
+
+.catalog-item:active {
+  background: #f1f1f1;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 888;
+  background: rgba(0, 0, 0, .2);
+}

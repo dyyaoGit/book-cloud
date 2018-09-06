@@ -50,8 +50,62 @@
   font-size: 14px;
 }
 
+.aurhot-r {
+  display: flex;
+}
+
+.aurhot-r text {
+  margin-left: 10rpx;
+}
+
 .box-r .author {
   display: flex;
   justify-content: space-between;
   font-size: 12px;
+}
+
+.loading-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160rpx;
+}
+
+.loading-more .loadmore-img {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.loading-more text {
+  margin-left: 20rpx;
+}
+
+.no-more {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 160rpx;
+  margin-top: 40rpx;
+  background: #f1f1f1;
+  color: #888;
+}
+
+.no-more-text {
+  position: relative;
+  z-index: 998;
+  width: 500rpx;
+  background: #f1f1f1;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  width: 600rpx;
+  height: 1rpx;
+  background: #e9e9e9;
 }
